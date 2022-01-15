@@ -78,6 +78,13 @@ a {
 }
 .image img {
     background-image: url(file:///C:/Assignments/assignment2/_images/images/Circle%20design.svg);
+    transition: 2s;
+    transform-style: ease-in-out;
+}
+
+.image img:hover {
+    transform: translateX(-50px);
+    cursor: pointer;
 }
 
 /* Style logos section of main section */
