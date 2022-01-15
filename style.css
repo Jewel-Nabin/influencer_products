@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.header {
+  
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 7%;
+    margin-top: 40px;
+    flex-direction: row;
+}
+
+.navigation h4 {
+    color: #3A3A3A;
+    font-weight: 700;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 16px;
+    transition-duration: none;
+    font-size: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+/* Style details div of header section */
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 7%;
+    margin-top: 40px;
+}
+
+.heading h1 {
+    color: #3A3A3A;
+}
+
+p {
+    color: #3A3A3A;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button > a {
+    font-size: 16px;
+    padding: 8px 30px;
+    background-color: rgb(230, 15, 87);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+a {
+    text-decoration: none;
+}
+.image img {
+    background-image: url(file:///C:/Assignments/assignment2/_images/images/Circle%20design.svg);
+}
+
+/* Style logos section of main section */
+.logos-container {
+    margin: 100px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 15%;
+}
+
+hr {
+    margin: 25px;
+}
+
+/* Style collections section of main */
+
+.collections {
+    margin-bottom: 10%;
+}
+
+.title {
+    text-align: center;
+    font-weight: 200;
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 35px 15%;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection {
+    Width: 300px;
+    Height: 450px;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0px 7px 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.collection img {
+    width: 270px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+h3 {
+    margin-left: 8px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+.collection > span {
+    margin-left: 8px;
+}
+
+.ratings {
+    margin-left: 8px;
+    font-size: 10px;
+    color: orange;
+}
+
+.point {
+    color: gray;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.collection > p {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.see-more {
+    float: right;
+    margin-right: 15%;
+    font-size: 16px;
+}
+
+.arrow {
+    color: rgb(230, 15, 87);
+}
+
+.see-more a  {
+    color: rgb(230, 15, 87);
+}
+
+/* -----------------------------
+    Style influence section
+------------------------------- */
+.influence-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 8%;
+    margin-top: 40px;
+}
+
+.influence-container img {
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.influence-details {
+    transform: translateX(50px);
+}
+
+.influence-details > p {
+    font-size: 16px;
+}
+
+/* Style footer section */
+.footer {
+    display: block;
+    background: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 70px 0 70px 0;
+    margin-top: 30px;
+}
+.footer > h4 {
+
+}
+
+.footer > p {
+    color: white;
+    font-size: 14px;
+}
+
+.icons ul {
+    padding: 0;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 42.5%;
+}
+
+.icons ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.icons ul li .fa {
+    color: #fff;
+    font-size: 16px;
+    transform: translateY(-4px);
+}
+
+.icons ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #857b7b2b;
+    text-align: center;
+}
+
+
+
+/*---------------------------------------
+     Responsive design for mobile phone
+--------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-links ul li {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .details {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logos {
+    flex-direction: column;
+  }
+
+  .logo {
+      padding-bottom: 30px;
+      width: 100%;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+  .collection-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .influence-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .image img {
+        width: 300px;
+        height: 250px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .influence-container img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .influence-details {
+        transform: translateX(15px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ..icons ul li .fa {
+        transform: translateY(-1px);
+    }
+}
+
+
+
+/*---------------------------------------
+     Responsive design for table
+--------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-links ul li {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .details {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logos {
+    flex-direction: column;
+  }
+
+  .logo {
+      padding-bottom: 30px;
+      width: 100%;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+  .collection-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .influence-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .image img {
+        width: 300px;
+        height: 250px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .influence-container img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .influence-details {
+        transform: translateX(15px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ..icons ul li .fa {
+        transform: translateY(-1px);
+    }
+}
